@@ -120,7 +120,7 @@ public class CSVDBManager{
         data = getDB();
         for (int i = 0; i < data.size(); i++) {
             String currValue = data.get(i)[indexToLook];
-            if (currValue == valueToLook) {
+            if (currValue.contains(valueToLook)) {
                 return data.get(i)[indexToRetrieve];
             }
         }
