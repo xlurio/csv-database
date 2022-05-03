@@ -112,4 +112,19 @@ public class CSVDBManager{
         }
     }
 
+    public String findValue(String columnsToLook, String valueToLook,
+                            String columnToRetrive){
+        List<String[]> data = new ArrayList<String[]>();
+        int indexToLook = getColumnIndex(columnsToLook);
+        int indexToRetrieve = getColumnIndex(columnToRetrive);
+        data = getDB();
+        for (int i = 0; i < data.size(); i++) {
+            String currValue = data.get(i)[indexToLook];
+            if (currValue == valueToLook) {
+                return data.get(i)[indexToRetrieve];
+            }
+        }
+        return "";
+    }
+
 }
