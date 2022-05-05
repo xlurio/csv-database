@@ -114,6 +114,10 @@ public class CSVDBManager{
 
     public String findValue(String columnsToLook, String valueToLook,
                             String columnToRetrive){
+        /**
+         * Retrieves the rows where the passed value to be looked
+         for are present on the value of the passed column
+        **/
         List<String[]> data = new ArrayList<String[]>();
         int indexToLook = getColumnIndex(columnsToLook);
         int indexToRetrieve = getColumnIndex(columnToRetrive);
