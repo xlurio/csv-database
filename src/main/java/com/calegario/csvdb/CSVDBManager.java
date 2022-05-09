@@ -11,10 +11,16 @@ import java.nio.file.Paths;
 public class CSVDBManager{
     private String csvPath;
     private String[] header;
+    private char sep;
 
     public CSVDBManager(String csvPath, String[] header) {
+        this(csvPath, header, ',');
+    }
+
+    public CSVDBManager(String csvPath, String[] header, char sep) {
         this.csvPath = csvPath;
         this.header = header;
+        this.sep = sep;
     }
 
     public void addRow(String[] row) throws FileNotFoundException, IOException {
@@ -65,13 +71,6 @@ public class CSVDBManager{
         /**
          * Returns a table with the data of the CSV file
         **/
-        return getDB(',');
-    }
-
-    public List<String[]> getDB(char sep) throws FileNotFoundException, IOException{
-        /**
-         * Returns a table with the data of the CSV file
-        **/
         List<String[]> data = new ArrayList<String[]>();
         CSVParser parser = new CSVParserBuilder().withSeparator(sep).build();
         CSVReader reader =
@@ -87,16 +86,12 @@ public class CSVDBManager{
     public void newDB(List<String[]> data)
         throws FileNotFoundException, IOException
     {
-        newDB(data, ',');
-    }
-
-    public void newDB(List<String[]> data, char sep)
-        throws FileNotFoundException, IOException
-    {
         Writer writer = Files.newBufferedWriter(Paths.get(csvPath));
         CSVWriter csvWriter = new CSVWriter(writer,
-                                            sep, 
-                                            CSVWriter.NO_QUOTE_CHARACTER);
+                                            sep,
+                                            CSVWriter.NO_QUOTE_CHARACTER,
+                                            CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+                                            CSVWriter.DEFAULT_LINE_END);
         csvWriter.writeNext(header);
         csvWriter.writeAll(data);
         csvWriter.flush();
