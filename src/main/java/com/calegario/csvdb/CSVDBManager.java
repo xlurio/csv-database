@@ -65,8 +65,18 @@ public class CSVDBManager{
         /**
          * Returns a table with the data of the CSV file
         **/
+        return getDB(',');
+    }
+
+    public List<String[]> getDB(char sep) throws FileNotFoundException, IOException{
+        /**
+         * Returns a table with the data of the CSV file
+        **/
         List<String[]> data = new ArrayList<String[]>();
-        CSVReader reader = new CSVReader(new FileReader(csvPath));
+        CSVParser parser = new CSVParserBuilder().withSeparator(sep).build();
+        CSVReader reader =
+            new CSVReaderBuilder(new FileReader(csvPath))
+                .withCSVParser(parser).build();
         String[] nextLine;
         while ((nextLine = reader.readNext()) != null) {
             data.add(nextLine);

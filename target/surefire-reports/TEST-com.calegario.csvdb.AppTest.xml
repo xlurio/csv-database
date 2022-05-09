@@ -1,61 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.calegario.csvdb.AppTest" time="0.057" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.calegario.csvdb.AppTest" time="0.028" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/xlurio/Projects/CSVDatabase/csvdb/target/test-classes:/home/xlurio/Projects/CSVDatabase/csvdb/target/classes:/home/xlurio/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/xlurio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/xlurio/.m2/repository/com/opencsv/opencsv/4.1/opencsv-4.1.jar:/home/xlurio/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/home/xlurio/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/home/xlurio/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/home/xlurio/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/xlurio/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:"/>
-    <property name="java.vm.vendor" value="Debian"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\lucas.correa\Projects\Java\CSVDatabase\csv-database\target\test-classes;C:\Users\lucas.correa\Projects\Java\CSVDatabase\csv-database\target\classes;C:\Users\lucas.correa\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\lucas.correa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\lucas.correa\.m2\repository\com\opencsv\opencsv\4.1\opencsv-4.1.jar;C:\Users\lucas.correa\.m2\repository\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\lucas.correa\.m2\repository\org\apache\commons\commons-text\1.1\commons-text-1.1.jar;C:\Users\lucas.correa\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\lucas.correa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lucas.correa\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-11"/>
-    <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="11"/>
-    <property name="os.name" value="Linux"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="18"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/xlurio/Projects/CSVDatabase/csvdb/target/surefire/surefirebooter12871643320796364023.jar /home/xlurio/Projects/CSVDatabase/csvdb/target/surefire 2022-05-08T15-06-45_205-jvmRun1 surefire15454389072487139288tmp surefire_011309742345250236412tmp"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\LUCAS~1.COR\AppData\Local\Temp\surefire15222550725002353636\surefirebooter15409917825503335689.jar C:\Users\lucas.correa\AppData\Local\Temp\surefire15222550725002353636 2022-05-09T11-09-16_787-jvmRun1 surefire10601853798467153667tmp surefire_0297736513664462931tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/xlurio/Projects/CSVDatabase/csvdb/target/test-classes:/home/xlurio/Projects/CSVDatabase/csvdb/target/classes:/home/xlurio/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/xlurio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/xlurio/.m2/repository/com/opencsv/opencsv/4.1/opencsv-4.1.jar:/home/xlurio/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/home/xlurio/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/home/xlurio/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/home/xlurio/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/xlurio/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Users\lucas.correa\Projects\Java\CSVDatabase\csv-database\target\test-classes;C:\Users\lucas.correa\Projects\Java\CSVDatabase\csv-database\target\classes;C:\Users\lucas.correa\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\lucas.correa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\lucas.correa\.m2\repository\com\opencsv\opencsv\4.1\opencsv-4.1.jar;C:\Users\lucas.correa\.m2\repository\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\lucas.correa\.m2\repository\org\apache\commons\commons-text\1.1\commons-text-1.1.jar;C:\Users\lucas.correa\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\lucas.correa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\lucas.correa\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/xlurio"/>
-    <property name="user.language" value="en"/>
+    <property name="user.home" value="C:\Users\lucas.correa"/>
+    <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2022-01-18"/>
-    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/xlurio/Projects/CSVDatabase/csvdb"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\lucas.correa\Projects\Java\CSVDatabase\csv-database"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/xlurio/Projects/CSVDatabase/csvdb/target/surefire/surefirebooter12871643320796364023.jar"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\LUCAS~1.COR\AppData\Local\Temp\surefire15222550725002353636\surefirebooter15409917825503335689.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.14+9-post-Debian-1deb11u1"/>
-    <property name="user.name" value="xlurio"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.10.0-13-amd64"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.version" value="18.0.1+10-24"/>
+    <property name="user.name" value="lucas.correa"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/xlurio/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-11"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="11.0.14"/>
-    <property name="user.dir" value="/home/xlurio/Projects/CSVDatabase/csvdb"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\lucas.correa\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\LUCAS~1.COR\AppData\Local\Temp\"/>
+    <property name="java.version" value="18.0.1"/>
+    <property name="user.dir" value="C:\Users\lucas.correa\Projects\Java\CSVDatabase\csv-database"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\lucas.correa\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\lucas.correa\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\lucas.correa\AppData\Local\Programs\Python\Python38\;C:\Users\lucas.correa\AppData\Local\Programs\Python\Launcher\;C:\Users\lucas.correa\AppData\Local\Microsoft\WindowsApps;C:\Users\lucas.correa\.dotnet\tools;C:\Users\lucas.correa\AppData\Local\atom\bin;C:\Users\lucas.correa\AppData\Local\Programs\FreeCAD 0.19\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;C:\Program Files\apache-maven-3.8.5\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Debian"/>
-    <property name="java.vm.version" value="11.0.14+9-post-Debian-1deb11u1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.1+10-24"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.calegario.csvdb.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.calegario.csvdb.AppTest" time="0.003"/>
 </testsuite>
