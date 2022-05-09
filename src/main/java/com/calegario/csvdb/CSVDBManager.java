@@ -87,8 +87,16 @@ public class CSVDBManager{
     public void newDB(List<String[]> data)
         throws FileNotFoundException, IOException
     {
+        newDB(data, ',');
+    }
+
+    public void newDB(List<String[]> data, char sep)
+        throws FileNotFoundException, IOException
+    {
         Writer writer = Files.newBufferedWriter(Paths.get(csvPath));
-        CSVWriter csvWriter = new CSVWriter(writer);
+        CSVWriter csvWriter = new CSVWriter(writer,
+                                            sep, 
+                                            CSVWriter.NO_QUOTE_CHARACTER);
         csvWriter.writeNext(header);
         csvWriter.writeAll(data);
         csvWriter.flush();
