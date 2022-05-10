@@ -7,20 +7,29 @@ import java.util.ArrayList;
 import java.nio.file.Files;
 import java.util.List;
 import java.nio.file.Paths;
+import java.nio.charset.*;
 
 public class CSVDBManager{
     private String csvPath;
     private String[] header;
     private char sep;
+    private Charset encoding;
 
     public CSVDBManager(String csvPath, String[] header) {
-        this(csvPath, header, ',');
+        this(csvPath, header, ',', StandardCharsets.UTF_8);
     }
 
     public CSVDBManager(String csvPath, String[] header, char sep) {
+        this(csvPath, header, sep, StandardCharsets.UTF_8);
+    }
+
+    public CSVDBManager(String csvPath, String[] header, char sep,
+                        Charset encoding)
+    {
         this.csvPath = csvPath;
         this.header = header;
         this.sep = sep;
+        this.encoding = encoding;
     }
 
     public void addRow(String[] row) throws FileNotFoundException, IOException {
@@ -86,7 +95,8 @@ public class CSVDBManager{
     public void newDB(List<String[]> data)
         throws FileNotFoundException, IOException
     {
-        Writer writer = Files.newBufferedWriter(Paths.get(csvPath));
+        Writer writer = Files.newBufferedWriter(Paths.get(csvPath),
+                                                encoding);
         CSVWriter csvWriter = new CSVWriter(writer,
                                             sep,
                                             CSVWriter.NO_QUOTE_CHARACTER,
